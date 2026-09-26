@@ -7,8 +7,10 @@
    Enter) and run `./install.sh`. Install into another folder than the unpacked download.
 3. Answer its questions:
    - **Folder**: press Enter for `~/Applications/FutureRO`, or type another folder or drive.
-   - **Missing programs**: it points you at Homebrew's Wine build (wine-crossover) and
-     Docker Desktop / OrbStack, and asks before running anything.
+   - **Missing programs**: Wine is downloaded for you (Wine Staging from its builder, Gcenx,
+     into ~/Applications; Homebrew no longer offers Wine since September 2026). A Wine you
+     already have in Applications is used as it is. For the solo server it points you at
+     Docker Desktop or OrbStack. It asks before doing anything.
    - **Your Ragnarok client**: Future RO goes on top of WARPGATE's "WARP0716 Full Client
      2025-07-16" (free, 3.8 GB). No client yet? Choose **1** and the installer opens WARPGATE
      for you; already have it? Choose **2** and type its folder. Step by step:

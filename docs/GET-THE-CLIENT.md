@@ -141,10 +141,17 @@ Later, `futurero warpgate` opens WARPGATE again, for example to repair the clien
 Microsoft's WebView2, which is unreliable under Wine on macOS.
 
 The dependable way is to **download the client on a Windows PC** (or a Windows virtual
-machine) with the [Windows steps 1 to 3](#windows), then copy the whole folder to your Mac:
-over the network, or with a USB stick formatted as exFAT (data.grf is larger than FAT32
-allows). Then run the macOS `install.sh`, choose **2) I already have it** and give it that
-folder.
+machine) with the [Windows steps 1 to 3](#windows), or take it from a Linux PC that has it,
+then copy the whole folder to your Mac:
+
+- **USB stick** formatted as exFAT (data.grf is larger than FAT32 allows).
+- **Over the network** with Remote Login (System Settings → General → Sharing → Remote Login
+  on the Mac). On the other PC, in the folder that holds the client folder (here `game`):
+
+      tar -cf - game | ssh YOU@YOUR-MAC "mkdir -p ~/Applications/FutureRO && tar -xf - -C ~/Applications/FutureRO"
+
+Then run the macOS `install.sh`, choose **2) I already have it** and give it that folder
+(`~/Applications/FutureRO/game`).
 
 You can also try **1) Download it now with WARPGATE** in the macOS installer. It works the
 same way as on Linux, but it may show an empty window.
