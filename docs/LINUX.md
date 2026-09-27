@@ -15,7 +15,8 @@
    - **Main server address**: the address of the Future RO main server, handed out in the
      Future RO Discord (https://discord.gg/gSwM9t8Dcx). Press Enter to add it later (`futurero address`).
    - **Solo server**: say yes to play on your own PC too. It needs Docker (or Podman).
-   - **Your solo account**: the name and password you log in with on the solo server.
+   - **Your solo account**: the name (4-23 letters, digits or _) and password (6-23
+     characters) you log in with on the solo server.
 4. Start **Future RO** (main server) or **Future RO solo** from your applications menu, or
    run `futurero play` / `futurero solo` in a terminal.
 
@@ -23,9 +24,10 @@ The unpacked download folder can be deleted after installing.
 
 ## Playing solo
 
-**Future RO solo** starts your own server (about 30 seconds; a notification says when it is
-ready), then the game, already pointed at your own server - just log in. When you close the
-game the server saves and stops, so nothing keeps running.
+**Future RO solo** installs new patches, starts your own server (about 30 seconds; the first
+start about a minute; a notification says when it is ready), then the game, already pointed
+at your own server - just log in. When you close the game the server saves and stops, so
+nothing keeps running.
 
 - `futurero server status` / `futurero server logs`: is it running, and what it says.
 - `futurero account NAME PASSWORD` makes another account (`gm` at the end for a GM one). It
@@ -40,7 +42,8 @@ pick **Future RO** in the server list.
 
 ## Updates and problems
 
-- `futurero play` / `futurero solo` install game-file updates first (from GitHub).
+- `futurero play` / `futurero solo` install game-file updates first (from GitHub, or from the
+  main server once you have entered its address).
 - `futurero solo` asks when a newer solo server is out (update now / later / skip this
   version) and keeps a copy of your characters first; `futurero server rollback` goes back.
   `futurero server update` checks now.

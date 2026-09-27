@@ -43,10 +43,11 @@ Step by step, with pictures: **[Get the client](docs/GET-THE-CLIENT.md)**
 | **Windows 10 / 11** | `FutureRO-Setup-<version>.exe` | Run it and pick your WARPGATE folder. [Windows guide](docs/WINDOWS.md) |
 | Windows, by hand | `FutureRO-<version>-files.zip` | Extract into your WARPGATE folder, run **Set up Future RO** |
 | **Linux** | `FutureRO-<version>-linux.tar.gz` | Unpack, run `./install.sh`. It can open WARPGATE for you. [Linux guide](docs/LINUX.md) |
-| macOS *(untested)* | `FutureRO-<version>-macos.tar.gz` | Unpack, run `./install.sh`. [macOS guide](docs/MACOS.md) |
+| **macOS** | `FutureRO-<version>-macos.tar.gz` | Unpack, run `bash install.sh` in Terminal. Copy the client from a Windows or Linux PC. [macOS guide](docs/MACOS.md) |
 
 **3. Play.** The **Future RO** icon checks for updates, then starts the game. **Future RO solo**
-starts your own server first (needs [Docker Desktop](https://www.docker.com/products/docker-desktop/), free).
+starts your own server first. It needs Docker: [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+(free) on Windows; on Linux and macOS the installer offers it (Docker or Podman, OrbStack).
 The main server needs a one-time [Tailscale setup](docs/CONNECTING.md) and its **address**:
 **ask for it in the [Future RO Discord](https://discord.gg/gSwM9t8Dcx)** (the setup and the first start ask you for it).
 

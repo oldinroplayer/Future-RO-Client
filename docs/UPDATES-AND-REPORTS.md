@@ -12,10 +12,10 @@
 ### Game files (patches)
 
 The patcher downloads patches from this repository (the
-[patches](https://github.com/silkhelp-wq/Future-RO-Client/releases/tag/patches) release),
-and from the Future RO server if GitHub can't be reached. Each patch holds only the files that
-changed, usually a few kilobytes. If there's no internet, **Play anyway** starts the game
-you have.
+[patches](https://github.com/silkhelp-wq/Future-RO-Client/releases/tag/patches) release).
+Once you have entered the main server's address, it also tries the Future RO server (over
+Tailscale) when GitHub can't be reached. Each patch holds only the files that changed,
+usually a few kilobytes. If there's no internet, **Play anyway** starts the game you have.
 
 Linux and macOS: `futurero play` and `futurero solo` install patches first; `futurero update`
 does only that.
@@ -60,4 +60,5 @@ e-mail addresses are replaced by `<user>`, `<pc>` and `<email>` before you see t
 Tailscale), your browser opens a new GitHub issue with the report filled in. Click
 **Create** there to send it (a free GitHub account is needed), or close it to not send it.
 Every report is also saved on your PC: `logs\report-<date>.txt` in the game folder
-(Linux/macOS: `~/FutureRO/logs/`).
+(Linux: `~/FutureRO/logs/`, macOS: `~/Applications/FutureRO/logs/`, or the install folder
+you chose).

@@ -93,7 +93,9 @@ Go down the list; most problems are the first two.
 5. **Your login expired.** Tailscale asks you to log in again every few months. Click the icon
    and log in.
 6. **Check from Tailscale itself.** Windows: open *Command Prompt* and run
-   `tailscale ping SERVER` (the address from the Discord). macOS/Linux: the same in *Terminal*. `pong` means the
+   `tailscale ping SERVER` (the address from the Discord). Linux: the same in *Terminal*.
+   macOS: the Tailscale app has no `tailscale` command; in *Terminal* run
+   `/Applications/Tailscale.app/Contents/MacOS/Tailscale ping SERVER`. `pong` means the
    network is fine and the problem is the game or the server; `timed out` means Tailscale.
 7. **School or work network.** Some networks block the direct connection; Tailscale then goes
    through a relay. It still works, only a bit slower. If nothing gets through at all, try

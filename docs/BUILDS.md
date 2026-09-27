@@ -16,8 +16,8 @@ Preset builds follow the point rule: a build never gives more stat or skill poin
 | [The 2-2 classes](#second2) | Episode 5.0 on | Alchemist, Bard, Crusader, Dancer, Monk, Rogue, Sage |
 | [Super Novice](#supernovice) | Episode 6.0 on | Super Novice |
 | [Transcendent and extended classes](#classic) | Episode 9.0 on | Assassin Cross, Champion, Clown, Creator, Gunslinger, Gypsy, High Priest, High Wizard, Lord Knight, Ninja, Paladin, Professor, Sniper, Soul Linker, Stalker, Star Gladiator, Super Novice, Taekwon, Whitesmith |
-| [Third classes, early](#ep14) | Episode 13.2c to Episode 14.2 | Arch Bishop (transcendent), Genetic (transcendent), Guillotine Cross (transcendent), Kagerou, Mechanic (transcendent), Minstrel (transcendent), Oboro, Ranger (transcendent), Royal Guard (transcendent), Rune Knight (transcendent), Shadow Chaser (transcendent), Sorcerer (transcendent), Super Novice (expanded), Sura (transcendent), Taekwon, Wanderer (transcendent), Warlock (transcendent) |
-| [Third classes and expanded classes](#ep16) | Episode 14.3 on | Arch Bishop (transcendent), Genetic (transcendent), Guillotine Cross (transcendent), Kagerou, Mechanic (transcendent), Minstrel (transcendent), Oboro, Ranger (transcendent), Rebellion, Royal Guard (transcendent), Rune Knight (transcendent), Shadow Chaser (transcendent), Sorcerer (transcendent), Soul Reaper, Star Emperor, Summoner, Super Novice (expanded), Sura (transcendent), Taekwon, Wanderer (transcendent), Warlock (transcendent) |
+| [Third classes, early](#ep14) | Episode 13.2c to Episode 15.1 | Arch Bishop (transcendent), Genetic (transcendent), Guillotine Cross (transcendent), Kagerou, Mechanic (transcendent), Minstrel (transcendent), Oboro, Ranger (transcendent), Royal Guard (transcendent), Rune Knight (transcendent), Shadow Chaser (transcendent), Sorcerer (transcendent), Super Novice (expanded), Sura (transcendent), Taekwon, Wanderer (transcendent), Warlock (transcendent) |
+| [Third classes and expanded classes](#ep16) | Episode 15.2 on | Arch Bishop (transcendent), Genetic (transcendent), Guillotine Cross (transcendent), Kagerou, Mechanic (transcendent), Minstrel (transcendent), Oboro, Ranger (transcendent), Rebellion, Royal Guard (transcendent), Rune Knight (transcendent), Shadow Chaser (transcendent), Sorcerer (transcendent), Soul Reaper, Star Emperor, Summoner, Super Novice (expanded), Sura (transcendent), Taekwon, Wanderer (transcendent), Warlock (transcendent) |
 | [Fourth classes](#current) | Episode 17.2b on | Abyss Chaser, Arch Mage, Biolo, Cardinal, Dragon Knight, Elemental Master, Hyper Novice, Imperial Guard, Inquisitor, Meister, Night Watch, Shadow Cross, Shinkiro, Shiranui, Sky Emperor, Soul Ascetic, Spirit Handler, Summoner, Troubadour, Trouvere, Windhawk |
 
 <a id="launch"></a>
@@ -203,7 +203,7 @@ Preset builds follow the point rule: a build never gives more stat or skill poin
 
 <a id="ep14"></a>
 
-## Third classes, early (Episode 13.2c to Episode 14.2)
+## Third classes, early (Episode 13.2c to Episode 15.1)
 
 **Arch Bishop (transcendent)**
 
@@ -292,7 +292,7 @@ Preset builds follow the point rule: a build never gives more stat or skill poin
 
 <a id="ep16"></a>
 
-## Third classes and expanded classes (Episode 14.3 on)
+## Third classes and expanded classes (Episode 15.2 on)
 
 **Arch Bishop (transcendent)**
 

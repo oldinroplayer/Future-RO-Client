@@ -21,9 +21,9 @@ tabs 3-5, close WARPGATE).
    out in the Future RO Discord (https://discord.gg/gSwM9t8Dcx): ask there. You can leave it empty and add it later
    (the first start of **Future RO** asks for it; Start menu -> Future RO -> **Main server
    address** changes it). Playing solo needs no address.
-5. On **Your solo account**, type the name and password you want for your own
-   server on this PC (see *Playing solo* below). If you don't want a solo
-   server, untick it on the components page instead.
+5. On **Your solo account**, type the name (4-23 letters, digits or _) and password (6-23
+   characters) you want for your own server on this PC (see *Playing solo* below). If you
+   don't want a solo server, untick it on the components page instead.
 6. Click **Finish**. Double-click **Future RO** on your desktop to play on the
    main server, or **Future RO solo** to play on your own.
 
@@ -38,8 +38,8 @@ runtimes, asks for the main server's address and makes the icons). That way has 
 
 **Future RO solo** starts a complete Future RO server on your own PC - no
 internet, no Tailscale - then the game. A black window shows what the server is
-doing; the first start takes about two minutes (later ones about half a
-minute). The game then opens straight onto your own server - log in with the
+doing; the first start takes a minute or two (later ones about 30 seconds).
+The game then opens straight onto your own server - log in with the
 account you chose during install.
 When you close the game, the server saves and stops - nothing keeps running.
 Leave the black window open while you play: it is what stops the server. If it
@@ -58,10 +58,12 @@ account page): open PowerShell and run, with your install folder,
 (add `-Gm` for a game-master account).
 
 The solo server runs inside **Docker Desktop** (free,
-https://docs.docker.com/desktop/setup/install/windows-install/). The installer
-tells you if it's missing; you can install it before or after Future RO. On
-most PCs Docker Desktop asks to turn on "WSL 2" the first time and wants one
-restart - say yes, restart, done.
+https://docs.docker.com/desktop/setup/install/windows-install/). Install it,
+then **open it once and accept its agreement**: on most PCs it turns on "WSL 2"
+the first time and asks for one restart - say yes, restart, open it again. Only
+when its whale icon in the tray is steady, run the Future RO setup (or, if
+Future RO is already installed, open **Future RO solo**). The setup tells you if
+Docker Desktop is missing; the game itself doesn't need it.
 
 Your solo world starts at **Episode 1**, the very first Ragnarok (2002), and a
 game master can move it through history with `@episode`. Your solo account is
@@ -73,8 +75,6 @@ a GM if you ticked that during install.
   card's driver yet. Click the driver button on that page (NVIDIA, AMD or
   Intel), install it, restart, and run the setup again.
 - **Memory under 4 GB** - the game may still run; close other programs first.
-- **Future RO server not reachable** - see *Connecting* below. You can still
-  install; the check only tells you the game won't log in yet.
 
 ## Connecting
 
@@ -85,16 +85,20 @@ main server** below.
 Until you're on the network the game starts, but says *"Failed to Connect to Server"* after
 login.
 
-With the solo server installed, the **Future RO** icon runs a small hidden
-PowerShell script first (it undoes what an interrupted solo session left
-behind). If that icon does nothing - some security software or company
-policies block PowerShell scripts - start `Future RO Patcher.exe` in the
-install folder directly; it is the same game and updater.
+The **Future RO** icon (and the setup's *Play Future RO now*) runs a small
+hidden PowerShell script first: it writes the game's server settings from the
+address you gave, adds the main server as a second update source, and cleans
+up after an interrupted solo session. If the icon does nothing - some security
+software or company policies block PowerShell scripts - run the setup again and
+type the main server address on its page (the setup then writes those settings
+itself), then start `Future RO Patcher.exe` in the client folder directly: it
+is the same updater and game. Playing solo needs PowerShell.
 
 ## Updates and problems
 
-- The **Future RO** icon installs game-file updates every time (from GitHub; no Tailscale
-  needed for that).
+- The **Future RO** icon installs game-file updates every time (from GitHub - no Tailscale
+  needed for that - and, once you have entered the main server's address, from the main
+  server too when GitHub can't be reached).
 - **Future RO solo** asks when a newer solo server is out (**Update now / Later / Skip this
   version**) and keeps a copy of your characters first. Start menu -> Future RO -> **Undo the
   last solo server update** goes back.
@@ -108,4 +112,5 @@ install folder directly; it is the same game and updater.
 - Settings -> Apps -> **Future RO** -> Uninstall removes the Future RO files. It asks
   whether to delete your solo server too (characters and accounts on this PC);
   for that, Docker Desktop has to be running - it tells you if it isn't.
-  The WARPGATE client stays in its folder; delete that folder yourself if you don't need it.
+  The WARPGATE client stays in its folder, with your screenshots, chat logs and saved
+  settings; delete that folder yourself if you don't need it.

@@ -137,10 +137,10 @@ Later, `futurero warpgate` opens WARPGATE again, for example to repair the clien
 
 ## macOS
 
-**Not tested yet** (we have no Mac). WARPGATE is a Windows program, and its window needs
-Microsoft's WebView2, which is unreliable under Wine on macOS.
+WARPGATE is a Windows program, and its window (Microsoft's WebView2) crashes under Wine on
+macOS, so the Mac installer cannot download the client for you.
 
-The dependable way is to **download the client on a Windows PC** (or a Windows virtual
+**Download the client on a Windows PC** (or a Windows virtual
 machine) with the [Windows steps 1 to 3](#windows), or take it from a Linux PC that has it,
 then copy the whole folder to your Mac:
 
@@ -150,11 +150,11 @@ then copy the whole folder to your Mac:
 
       tar -cf - game | ssh YOU@YOUR-MAC "mkdir -p ~/Applications/FutureRO && tar -xf - -C ~/Applications/FutureRO"
 
-Then run the macOS `install.sh`, choose **2) I already have it** and give it that folder
-(`~/Applications/FutureRO/game`).
+Then run the macOS installer (`bash install.sh` in Terminal), choose **2) I already have it**
+and give it that folder (`~/Applications/FutureRO/game`).
 
-You can also try **1) Download it now with WARPGATE** in the macOS installer. It works the
-same way as on Linux, but it may show an empty window.
+The macOS installer still offers **1) Try WARPGATE here**. On the Mac we tried, WARPGATE's
+window crashed; count on copying the client instead.
 
 ---
 
@@ -176,14 +176,14 @@ has. Pausing a VPN helps sometimes.
 
 **I used WARPGATE's LANG or RAGEXE tab after installing Future RO.**
 Those replace some Future RO files with WARPGATE's versions. Run the Future RO setup again
-(Linux: `./install.sh`) to put ours back. Your settings and characters are not touched.
+(Linux/macOS: `install.sh`) to put ours back. Your settings and characters are not touched.
 
 **The game says a .dll is missing, or closes right away.**
 The Future RO setup installs Microsoft's runtimes the game needs (Visual C++ 2012 and
 2015-2022, DirectX 9). If you used the files-only zip, run **Set up Future RO** in the game
 folder. It does the same.
 
-**Still stuck?** Start menu -> Future RO -> **Report a problem** (Linux: `futurero report`).
+**Still stuck?** Start menu -> Future RO -> **Report a problem** (Linux/macOS: `futurero report`).
 It shows you the whole report before sending anything. Or
 [open an issue](https://github.com/silkhelp-wq/Future-RO-Client/issues/new) and describe
 what you see.
